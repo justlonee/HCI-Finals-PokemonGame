@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F2EFE9;
+}
+
+.screen img{
+    height: 500px;
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 8.55%;
+    border: 5px solid black;
+}
+
+.buttons{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.start-text{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.buttons #pokemon1, #pokemon2, #pokemon3{
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+}
+
+.buttons #pokemon1, #pokemon2{
+    margin-right: 60px;
+}
+
+#pokemon2 img{
+    height: 80px;
+}
+
+#pokemon3 img{
+    height: 70px;
+}
+
+/* button animation */
+.buttons #pokemon1, #pokemon2, #pokemon3 {
+  transition: all .25s;
+}
+
+#pokemon1:hover {
+  transform: scale(1.5);
+}
+#pokemon2:hover {
+    transform: scale(1.5);
+  }
+#pokemon3:hover {
+  transform: scale(1.5);
+}  
+/* end of button animation */
+
+/* start button */
+.start{
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.start {
+  transition: all .25s;
+}
+
+.start:hover {
+  transform: scale(1.5);
+}
+/* end of start animation */
+
+#try img{
+    background-position-y: -50%;
+}
+
+/* BATTLE */
+
+.screen-battle {
+  margin-top: 8.55%;
+  height: 500px;
+  width: 900px;
+  display: block;
+  background-image: url('battlebackground.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* margin-top: 5%; */
+  border: 5px solid black;
+}
+
+.attack #fight, #run {
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.attack #fight, #run {
+  transition: all .25s;
+}
+
+.attack #run{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.attack #fight:hover, #run:hover {
+  transform: scale(1.5);
+}
+
+.attack {
+    text-align: center;
+}
+
+.attack #fight {
+  margin-right: 60px;
+}
+
+/* battle 1 */
+.pikafront{
+  margin-left: 68%;
+  margin-top: 9%;
+}
+
+.pikafront img{
+  width: 150px;
+}
+
+.chariback{
+  margin-top: -8%;
+  margin-left: 8%;
+}
+
+.chariback img{
+  width: 380px;
+}
+/* end of battle 1 */
+
+/* battle 2 */
+.pikaback{
+  margin-left: 20%;
+  margin-top: 1%;
+}
+
+.pikaback img{
+  width: 200px;
+}
+
+.charifront{
+  margin-top: -2.5%;
+  margin-left: 62%;
+}
+
+.charifront img{
+  width: 250px;
+}
+/* end of battle 2 */
+
+/* battle 3 */
+.pikafront-3 img{
+  width: 200px;
+}
+.pikafront-3{
+  margin-left: 67%;
+  margin-top: 4%;
+}
+
+.dittoback img{
+  width: 280px;
+}
+
+.dittoback{
+  margin-left: 18%;
+  margin-top: 8.3%;
+}
+
+.damage-output-player, .damage-output-opponent, .output-text, .reset-div, .hp-Div {
+  font-family: "Press Start 2P", sans-serif;
+}
+
+/* text animations */
+.output-text {
+  margin-top: 1%;
+  text-align: center;
+  color: #fcd12a;
+  text-shadow: 2px 2px black;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.damage-log{
+  padding-top: 2rem;
+}
+
+.damage-output-player, .damage-output-opponent{
+  text-align: center;
+  padding-top: 20px;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* end of text animations */
+
+.reset-div{
+  text-align: center;
+  margin-top: 1%;
+}
+
+#reset{
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+  padding: 15px;
+}
+
+#reset {
+  transition: all .25s;
+}
+
+#reset{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+#reset:hover {
+  transform: scale(1.5);
+}
+
+.hp-Div{
+  display: flex;
+  padding-bottom: 20px;
+  padding-left: 25%;
+}
+
+.hp-own{
+  width: 26%;
+}
+
+.hp-opponent{
+  margin-left: 15.6%;
+  width: 25% !important;
+}
+
+.progress{
+  height: 3rem !important;
+  position: relative;
+  font-weight: bold;
+}
+
+.main{
+  margin-top: 5%;
+}
+
+
+.progress span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  color: black;
+  font-size: 17px;
+}
+
+.main h2{
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+

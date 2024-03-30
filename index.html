@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Pokemon Battle</title>
+</head>
+
+<body>
+
+<div class="main">
+    <div class="choose">
+        <div class="screen">
+            <img src="background pokemon.png" alt="background">
+        </div>
+
+        <div class="start-text">
+            <h2>Do you want to start your journey?</h2>
+            <button class="start" id="start">Start Journey</button>
+        </div>
+    </div>
+
+    <div class="battle" style="display: none;">
+        <div class="hp-Div" style="display: none;">
+            <div class="hp-own">
+                <div class="progress">
+                    <div class="progress-bar bg-danger" id="player-hp-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"><span id="hp-player-text"></span></div>
+                </div>
+            </div>
+            <div class="hp-opponent">
+                <div class="progress">
+                    <div class="progress-bar bg-danger" id="opponent-hp-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"><span id="hp-opponent-text"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen-battle">
+            <div class="pokemon-battle-sprites">
+                <div class="battle1" style="display: none;">
+                    <div class="pikafront">
+                        <img src="pikachu.gif" id="pikachu-front" alt="pikafront">
+                    </div>
+
+
+                    <div class="chariback">
+                        <img src="charizard back.gif" id="charizard-back" alt="chariback">
+                    </div>
+                </div>
+
+                <div class="battle2" style="display: none;">
+                    <div>
+                        <div class="charifront">
+                            <img src="charizard front.gif" alt="charifront">
+                        </div>
+
+                        <div class="pikaback">
+                            <img src="pikachu back.gif" alt="pikaback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="battle3" style="display: none;">
+                    <div class="pikafront-3">
+                        <img src="pikachu.gif" alt="pikafront3">
+                    </div>
+
+                    <div class="dittoback">
+                        <img src="ditto back.gif" alt="dittoback">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <h2>Choose Your Pokemon!</h2>
+            <button id="pokemon1"><img src="charizard front.gif" alt="poke1"></button>
+            <button id="pokemon2"><img src="pikachu.gif" alt="poke2"></button>
+            <button id="pokemon3"><img src="ditto.gif" alt="poke3"></button>
+        </div>
+
+    </div>
+
+    <div class="attack" style="display: none;">
+        <button id="fight">FIGHT!</button>
+        <button id="run">RUN!</button>
+        <div class="damage-log">
+            <h2>Damage Log:</h2>
+        </div>
+    </div>
+
+    <!-- damage output -->
+    <div class="damage-output-player" style="display: block;"></div>
+    <div class="damage-output-opponent" style="display: block;"></div>
+    <!-- end of dmg output -->
+
+    <!-- output text -->
+    <div class="output-text">
+        <div class="faint-text" style="display: none;">
+            <h3>YOUR POKEMON HAS FAINTED!</h3>
+        </div>
+
+        <div class="win-text" style="display: none;">
+            <h3>YOU WIN!</h3>
+        </div>
+
+        <div class="run-text" style="display: none;">
+            <h3>YOU RAN AWAY! YOU'RE A COWARD!</h3>
+        </div>
+    </div>
+
+    <!-- Reset -->
+    <div class="reset-div" style="display: none;">
+        <h5>Restart?</h5>
+        <button id="reset">Yes!</button>
+    </div>
+</div>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
